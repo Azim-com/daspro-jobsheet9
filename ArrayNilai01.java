@@ -13,5 +13,16 @@ public class ArrayNilai01 {
                 System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (LULUS)");
             }
         }
+        int lulus = 0;
+        int tidakLulus = 0;
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70) {
+                lulus++;
+            } else {
+                tidakLulus++;
+            }
+        }
+        System.out.println("Jumlah mahasiswa lulus: " + lulus);
+        System.out.println("Jumlah mahasiswa tidak lulus: " + tidakLulus);
     }
 }
