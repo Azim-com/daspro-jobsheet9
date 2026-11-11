@@ -24,7 +24,9 @@ public class SearchNilai01 {
             } 
         }
         if (!ditemukan) { 
-            System.out.println("Nilai " + key + " tidak ditemukan."); 
+            System.out.println("Pencarian gagal!");
+            System.out.println("Nilai " + key + " tidak tersedia dalam array.");
+            System.out.println("Silakan periksa kembali nilai yang dimasukkan."); 
         } 
     }
 }
