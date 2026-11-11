@@ -3,10 +3,13 @@ public class ArrayRataNilai01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int[] nilaiMhs = new int[10]; 
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlah = input.nextInt();
+
+        int[] nilaiMhs = new int[jumlah];
+
         int total = 0; 
         double rata2;
-
         for (int i = 0; i < nilaiMhs.length; i++) { 
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": "); 
             nilaiMhs[i] = input.nextInt();
